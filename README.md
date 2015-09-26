@@ -12,7 +12,7 @@ http://tordans.github.io/waitbutwhy-to-instapaper/
 
 ## Copy Paste JS
 
-```
+```javascript
 // The title of our new html file
 title = 'waitbutwhy.com: ' + $('.entry-header').text();
 // Remove social sharing that we cannot use in instapaper
