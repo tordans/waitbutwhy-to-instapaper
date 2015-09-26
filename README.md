@@ -19,6 +19,8 @@ title = 'waitbutwhy.com: ' + $('.entry-header').text();
 $('.homeSocial').remove();
 $('#socBarmageddon').remove();
 $('#social-ads').remove();
+// Extend the body so the footnotes become part of the article
+$('a.footnote-button').after("<br><em>[FOOTNOTE-START:]</em> "+$('a.footnote-button').attr('data-footnote-content')+" <em>[/FOOTNOTE-END]</em><br>")
 // The body of our new html file
 body = $('.post');
 url_readable = window.location.hostname+window.location.pathname;
