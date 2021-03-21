@@ -26,7 +26,7 @@ body = $('.post');
 url_readable = window.location.hostname+window.location.pathname;
 replace_urles = new RegExp('/', 'g');
 url_as_filename = url_readable.replace(replace_urles, '_');
-copy_paste_me = "\n\n<!-- FILENAME: "+url_as_filename+" -->\n\n<head><title>"+title+"</title><meta content='text/html; charset=utf-8' http-equiv='Content-Type' /></head><body><h1>Find the original content here: <a href='"+window.location.href+"'>"+url_readable+"</a></h1><hr>"+body.html()+"</body></html>\n\n";
+copy_paste_me = "\n\n<!-- FILENAME: "+url_as_filename+" -->\n\n<head><meta name='robots' content='noindex'><title>"+title+"</title><meta content='text/html; charset=utf-8' http-equiv='Content-Type' /><meta name='robots' content='noindex'></head><body><h1>Find the original content here: <a href='"+window.location.href+"'>"+url_readable+"</a></h1><hr>"+body.html()+"</body></html>\n\n";
 console.log('--- COPY PAST THIS: ---');
 copy_paste_me;
 ```
